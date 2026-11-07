@@ -16,7 +16,7 @@
   # the generated stubs compiling against the wrong API. Change them together,
   # regenerate, and commit the output in the same commit as the bump.
   connect-version = "0.9.0";
-  protoc-version = "0.9.1";
+  protoc-version = "0.9.2";
 
   # Deliberately not `protoc-version`: the protovalidate plugin has its own
   # release line (0.10.x), which is not buffa's. It still moves WITH buffa —
@@ -66,16 +66,16 @@ in {
   protoc-gen-buffa = crate {
     pname = "protoc-gen-buffa";
     version = protoc-version;
-    hash = "sha256-uogD137KtnMcUEYlF2Jj0/PsO2NAOmm2ZzzKf9FovtM=";
-    cargoHash = "sha256-kN+bjbQevcv3MWwOjOCBP/f+9J2kTMv7506AAtx7fEg=";
+    hash = "sha256-BEK+Nfn3/uBO78vXCm0zEQYgAkGFRkiPwRvTOZwFc00=";
+    cargoHash = "sha256-tYBuO9RjeeqsiXvIrLVmd2HHC4B9o8dGqpl3GyWDjFQ=";
   };
 
   # Assembles the `mod.rs` tree per output dir.
   protoc-gen-buffa-packaging = crate {
     pname = "protoc-gen-buffa-packaging";
     version = protoc-version;
-    hash = "sha256-xp/Zq38Rzs52XyEOyxX5CbZ2KwTSrNG47oHv+k4wKnY=";
-    cargoHash = "sha256-ZxVyXSMAwdHwTuIcVdgKkegF6N1DSRjzhbWQDFUA0W0=";
+    hash = "sha256-BJDNarpyPjNzo0Y10tlenFPg49FrRO+9kGrrOYXs/Rw=";
+    cargoHash = "sha256-+65D8FDPJuNyncMhvMmH0dNn1zza+dUeIfGvT+hbauc=";
   };
 
   # Static `Validate` impls generated from the `buf.validate` annotations. CEL
